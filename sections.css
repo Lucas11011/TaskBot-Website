@@ -1,0 +1,273 @@
+/* Content Sections */
+
+.content-section {
+    margin-top: 30px;
+    
+    .chat-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-right: 1.5rem;
+}
+
+.section-logo {
+    margin-top: 16rem;
+    margin-right: 1.5rem;
+    width: 10rem;
+    height: auto;
+}   display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+    margin-bottom: 30px;
+}
+
+.content-section::before {
+    content: '';
+    position: absolute;
+    width: 65rem;
+    height: 29rem;
+    background: #F1F3F5;
+    border-radius: 30px;
+    top: 120px;
+    z-index: 1;
+}
+
+h2 {
+    margin: 0 0 0 0;
+}
+
+.section-title {
+    font-size: 3em;
+    color: #333;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 1000px;
+    position: relative;
+    z-index: 10;
+}
+
+.phone-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.section-iphone {
+    width: 240px;
+    height: auto;
+}
+
+.features-section-iphone {
+    width: 310px;
+    height: auto;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-right: 2rem;
+}
+
+.section-logo {
+    margin-top: 14rem;
+    margin-right: 2rem;
+    width: 12rem;
+    height: auto;
+}
+
+.message-container {
+    /* flex: 1; */
+    /* display: flex; */
+}
+
+.speech-bubble {
+    background: #B8D4F0;
+    color: #333;
+    padding: 25px 30px;
+    border-radius: 20px;
+    position: relative;
+    width: 28rem;
+    text-align: center;
+    transform-origin: bottom left;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.6s ease;
+}
+
+.speech-bubble.animate-in {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 90%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 20px solid #B8D4F0;
+}
+
+.speech-bubble p {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Content Sections Mobile */
+    .content-section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-section::before {
+        width: 95%;
+        height: auto;
+        min-height: 600px;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .section-title {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .section-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Stack elements vertically with text first */
+    .phone-container {
+        flex: none;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+
+    .chat-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 20px 0;
+        order: 1;
+        text-align: center;
+    }
+
+    .section-iphone {
+        width: 200px;
+        max-width: 70vw;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .features-section-iphone {
+        width: 240px;
+        max-width: 75vw;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .logo-container {
+        margin: 0;
+        display: none;
+    }
+
+    .section-logo {
+        display: none;
+    }
+
+    /* Remove speech bubble styling but keep text */
+    .message-container {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .speech-bubble {
+        background: none;
+        border: none;
+        border-radius: 0;
+        padding: 20px 0;
+        width: 100%;
+        max-width: none;
+        position: relative;
+        transform: none;
+        opacity: 1;
+        transition: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .speech-bubble::before {
+        display: none;
+    }
+
+    .speech-bubble p {
+        font-size: 1.4em;
+        color: #333;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 90%;
+    }
+
+    .features-reverse .chat-container {
+        margin-left: 0;
+    }
+
+    /* Hide decorative elements on mobile for cleaner look */
+    .decoration {
+        display: none;
+    }
+}

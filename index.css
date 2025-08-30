@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    min-height: 100vh;
+    color: white;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(157deg, #0057BF 0%, #0057BF 50%, #0067d0 50%, #0067d0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.left-section {
+    text-align: center;
+}
+
+.logo {
+    width: 20rem;
+    height: auto;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-transform: lowercase;
+}
+
+p {
+    font-size: 1.8em;
+}
+
+.center-section .iphone {
+    width: 15rem;
+    height: auto;
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+
+.right-section {
+    text-align: center;
+}
+
+.qr-code {
+    width: 10rem;
+    height: 10rem;
+    background: white;
+    color: #1E3A8A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 5rem;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.download-btn {
+    width: 10rem;
+    height: auto;
+    border-radius: 15px;
+}
+
+footer {
+    margin-top: 150px;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(157deg, #0057BF 0%, #0057BF 50%, #0067d0 50%, #0067d0 100%);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Mobile Responsive Styles for Header */
+@media (max-width: 768px) {
+    header {
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        gap: 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-section,
+    .center-section,
+    .right-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Reorder header elements */
+    .left-section {
+        order: 1;
+    }
+
+    .right-section {
+        order: 2;
+    }
+
+    .center-section {
+        order: 3;
+    }
+
+    .logo {
+        width: 15rem;
+        max-width: 80vw;
+        margin: 0 auto;
+        display: block;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    p {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .center-section .iphone {
+        width: 18rem;
+        margin: 0 auto;
+        max-width: 85vw;
+        display: block;
+    }
+
+    .qr-code {
+        display: none;
+    }
+
+    .download-btn {
+        width: 8rem;
+        max-width: 80vw;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Footer mobile styles */
+    footer {
+        margin-top: 50px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .social-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-links a img {
+        width: 40px;
+        height: 40px;
+    }
+}
