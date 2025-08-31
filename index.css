@@ -32,7 +32,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 2.2em;
 }
 
 .container {
@@ -50,18 +50,18 @@ nav a {
 }
 
 .logo {
-    width: 18rem;
+    width: 23rem;
     height: auto;
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 
 .title {
     padding: 0rem;
     margin: 0rem;
-    font-size: 3em;
+    font-size: 3.4em;
 }
 .subtitle {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: normal;
 }
 
@@ -70,18 +70,20 @@ p {
 }
 
 .center-section .iphone {
-    width: 17.5rem;
+    width: 22rem;
     height: auto;
     margin-left: 4rem;
+    margin-top: 1.5rem;
 }
 
 .right-section {
+    margin-top: 3rem;
     text-align: center;
 }
 
 .qr-code {
-    width: 14rem;
-    height: 14rem;
+    width: 18rem;
+    height: 18rem;
     background: white;
     color: #1E3A8A;
     display: flex;
@@ -95,14 +97,14 @@ p {
 }
 
 .qr-code-caption {
-    font-size: 2.2em;
+    font-size: 2.6em;
     margin-top: 0px;
     margin-bottom: 20px;
     font-weight: normal;
 }
 
 .download-btn {
-    width: 13rem;
+    width: 17rem;
     height: auto;
     border-radius: 15px;
 }
@@ -227,27 +229,27 @@ footer {
     }
 
     .logo {
-        width: 15rem;
+        width: 20rem;
         max-width: 80vw;
-        margin-top:
-        margin: 0 auto;
+        margin-top: 3rem;
+        /* margin: 0 auto; */
         display: block;
     }
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2.8em;
         text-align: center;
         margin: 10px auto;
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.75em;
         text-align: center;
         margin: 0 auto;
     }
 
     .center-section .iphone {
-        width: 18rem;
+        width: 22rem;
         margin: 0 auto;
         max-width: 85vw;
         display: block;
@@ -262,7 +264,7 @@ footer {
     }
 
     .download-btn {
-        width: 8rem;
+        width: 14rem;
         max-width: 80vw;
         margin: 0 auto;
         display: block;
@@ -273,6 +275,7 @@ footer {
         margin-top: 50px;
         padding: 30px 20px;
         text-align: center;
+        background: #252a30;
     }
 
     .social-links {
