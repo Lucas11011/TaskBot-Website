@@ -49,13 +49,18 @@ nav a {
     height: auto;
 }
 
-h1 {
-    font-size: 3.5em;
-    text-transform: lowercase;
+.title {
+    padding: 0rem;
+    margin: 0rem;
+    font-size: 3.2em;
+}
+.subtitle {
+    font-size: 2.4rem;
+    font-weight: normal;
 }
 
 p {
-    font-size: 1.8em;
+    font-size: 1.5rem;
 }
 
 .center-section .iphone {
@@ -98,13 +103,24 @@ footer {
     width: 100%;
     position: relative;
     z-index: 10;
-    background: linear-gradient(157deg, #0057BF 0%, #0057BF 50%, #0067d0 50%, #0067d0 100%);
+    background: #252A30;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.social-links img{
+    filter: grayscale(100%);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
 }
 
 /* Mobile Responsive Styles for Header */

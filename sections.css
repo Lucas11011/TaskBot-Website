@@ -39,6 +39,9 @@
 h2 {
     margin: 0 0 0 0;
 }
+#Closing {
+    margin-top: 70px;
+}
 
 .section-title {
     font-size: 3em;
@@ -95,6 +98,7 @@ h2 {
 
 .section-logo {
     margin-top: 14rem;
+    /* margin-bottom: 20rem; */
     margin-right: 2rem;
     width: 12rem;
     height: auto;
@@ -111,13 +115,21 @@ h2 {
     padding: 25px 30px;
     border-radius: 20px;
     position: relative;
-    width: 28rem;
+    width: 30rem;
     text-align: center;
     transform-origin: bottom left;
     transform: scale(0);
     opacity: 0;
     transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.6s ease;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
+
+/* More Section - Narrower Speech Bubble */
+#More .speech-bubble {
+    width: 27rem;
+}
+
 
 .speech-bubble.animate-in {
     transform: scale(1);
@@ -128,7 +140,7 @@ h2 {
     content: '';
     position: absolute;
     left: -20px;
-    top: 90%;
+    top: 75%;
     transform: translateY(-50%);
     width: 0;
     height: 0;
@@ -139,10 +151,36 @@ h2 {
 
 .speech-bubble p {
     margin: 0;
-    font-size: 1.8em;
+    font-size: 1.3em;
     font-weight: 600;
     color: #333;
 }
+
+.message-content p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.message-content h3 {
+    /* margin-left: 1rem; */
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+}
+
+ .message-content li {
+       margin: 0;
+       font-size: 1.3em;
+       font-weight: 400;
+       color: #333;
+ }
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
