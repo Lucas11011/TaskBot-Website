@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Dongle', sans-serif;
@@ -28,34 +32,36 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
     width: 80%;
-    margin-top: 50px;
+    margin-top: 18px;
     position: relative;
     z-index: 10;
 }
 
 .left-section {
     text-align: center;
+    position: relative;
 }
 
 .logo {
-    width: 20rem;
+    width: 18rem;
     height: auto;
+    margin-top: 1rem;
 }
 
 .title {
     padding: 0rem;
     margin: 0rem;
-    font-size: 3.2em;
+    font-size: 3em;
 }
 .subtitle {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: normal;
 }
 
@@ -64,10 +70,9 @@ p {
 }
 
 .center-section .iphone {
-    width: 15rem;
+    width: 17.5rem;
     height: auto;
-    margin-left: 6rem;
-    margin-top: 1rem;
+    margin-left: 4rem;
 }
 
 .right-section {
@@ -75,8 +80,8 @@ p {
 }
 
 .qr-code {
-    width: 10rem;
-    height: 10rem;
+    width: 14rem;
+    height: 14rem;
     background: white;
     color: #1E3A8A;
     display: flex;
@@ -89,8 +94,15 @@ p {
     border-radius: 15px;
 }
 
+.qr-code-caption {
+    font-size: 2.2em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
 .download-btn {
-    width: 10rem;
+    width: 13rem;
     height: auto;
     border-radius: 15px;
 }
@@ -103,7 +115,9 @@ footer {
     width: 100%;
     position: relative;
     z-index: 10;
-    background: #252A30;
+    /* background: #252A30; */
+    background: url(./decorations/circuits-bottom-left.svg) #252a30 no-repeat 100px 100px;
+    box-sizing: border-box;
 }
 
 .social-links {
@@ -116,10 +130,53 @@ footer {
     filter: grayscale(100%);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    width: 36px;
+    height: 36px;
 
     &:hover {
         transform: scale(1.1);
         transition: transform 0.3s ease;
+    }
+}
+
+/* Medium Screen Responsive Styles (9.5 inches and under) */
+@media (max-width: 1040px) {
+    /* Header elements decrease in size slightly */
+    .logo {
+        width: 17rem;
+    }
+
+    .title {
+        font-size: 1.8em;
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        font-size: 1.6rem;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .center-section .iphone {
+        width: 13rem;
+    }
+
+    .qr-code {
+        width: 8.5rem;
+        height: 8.5rem;
+        font-size: 1.3em;
+    }
+
+    .qr-code-caption {
+        font-size: 1.4em;
+    }
+
+    .download-btn {
+        width: 8.5rem;
     }
 }
 
@@ -128,6 +185,7 @@ footer {
     header {
         min-height: 100vh;
         padding: 20px;
+        box-sizing: border-box;
     }
 
     nav {
@@ -171,6 +229,7 @@ footer {
     .logo {
         width: 15rem;
         max-width: 80vw;
+        margin-top:
         margin: 0 auto;
         display: block;
     }
@@ -195,6 +254,10 @@ footer {
     }
 
     .qr-code {
+        display: none;
+    }
+
+    .qr-code-caption {
         display: none;
     }
 

@@ -8,36 +8,37 @@
 .top-right-above {
     top: 50px;
     right: 0px;
-    width: 160px;
+    width: 230px;
     height: auto;
 }
 
 .top-right-under {
     top: 30px;
     right: 0px;
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
 .bottom-left {
     bottom: 50px;
     left: 0px;
-    width: 100px;
+    width: 120px;
     height: auto;
 }
 
 .square-dots-vertical {
     top: 5%;
-    left: 20px;
-    width: 20px;
+    left: 25px;
+    width: 25px;
     height: auto;
 }
 
 .sparkles {
-    top: 140px;
-    left: 30rem;
-    width: 55px;
+    top: 20px;
+    right: 50px;
+    width: 75px;
     height: auto;
+    position: absolute;
 }
 
 
@@ -86,4 +87,17 @@
     left: 15px;
     width: 70px;
     height: auto;
+}
+
+/* Medium Screen Responsive Styles (9.5 inches and under) */
+@media (max-width: 1024px) {
+    /* Hide decorative elements not in header */
+    .decoration.right,
+    .decoration.left,
+    .decoration.middle-left-squares,
+    .decoration.middle-right-squares,
+    .decoration.body-bottom-right,
+    .decoration.body-bottom-left {
+        display: none;
+    }
 }
